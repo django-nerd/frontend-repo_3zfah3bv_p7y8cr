@@ -3,12 +3,18 @@ import Hero3D from './components/Hero3D';
 import TechShowcase from './components/TechShowcase';
 import ProjectsGrid from './components/ProjectsGrid';
 import ContactCTA from './components/ContactCTA';
+import ParticlesCanvas from './components/ParticlesCanvas';
+import CursorAura from './components/CursorAura';
 
 function App() {
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* Global motion layers */}
+      <ParticlesCanvas />
+      <CursorAura />
+
       {/* Simple sticky nav */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/60 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-white/10 bg-black/60 backdrop-blur">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
           <a href="#home" className="font-semibold tracking-tight">AI • Portfolio</a>
           <div className="flex items-center gap-4 text-sm text-white/80">
